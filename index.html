@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>KalkuMatik Segitiga</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to KalkuMatik Segitiga</h1>
+        <h4>Apa yang ingin kamu hitung?</h4>
+        <button id="luasBtn">LUAS SEGITIGA</button>
+        <button id="kelilingBtn">KELILING SEGITIGA</button>
+    </header>
+
+    <section id="luas">
+        <h2>Rumus Luas Segitiga: 1/2 x (Alas x Tinggi)</h2>
+        <center><img src="img/gambar.png" alt="gambar"></center>
+        <form>
+            <label>Alas</label>
+            <input type="number" id="alas" placeholder="Masukkan Alas">
+            <br>
+            <label>Tinggi</label>
+            <input type="number" id="tinggi" placeholder="Masukkan Tinggi">
+            <br>
+            <div id="operasiLuas"></div>
+            <div id="resultLuas"></div>
+            
+            <br>
+            <input onclick="hitungLuas()" type="button" name="submit" value="HITUNG">
+            <input onclick="resetLuas()" type="reset" name="reset" value="RESET">
+        </form>
+
+    </section>
+
+    <section id="keliling">
+        <h2>Rumus Keliling Segitiga: Sisi1 + Sisi2 + Sisi3</h2>
+        <center><img src="img/gambar.png" alt="gambar"></center>
+        <form>
+            <label>Sisi1</label>
+            <input type="number" id="sisi1" placeholder="Masukkan Sisi1">
+            <br>
+            <label>Sisi2</label>
+            <input type="number" id="sisi2" placeholder="Masukkan Sisi2">
+            <br>
+            <label>Sisi3</label>
+            <input type="number" id="sisi3" placeholder="Masukkan Sisi3">
+            <br>
+            <div id="operasiKeliling"></div>
+            <div id="resultKeliling"></div>
+
+            <br>
+            <input onclick="hitungKeliling()" type="button" name="submit" value="HITUNG">
+            <input onclick="resetKeliling()" type="reset" name="reset" value="RESET">
+        </form>
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
